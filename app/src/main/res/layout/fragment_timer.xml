@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.fragments.TimerFragment"
+    android:orientation="vertical">
+
+
+    <com.github.guilhe.circularprogressview.CircularProgressView
+        android:id="@+id/circleTimerValueCPV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundAlphaEnabled="true"
+        app:backgroundColor="@color/colorAccent"
+        app:progress="10"
+        app:progressBarColor="@color/colorAccent"
+        app:progressBarThickness="33dp"
+        app:progressThumb="true"
+        app:reverse="true"
+        app:shadow="false"
+        app:startingAngle="270" />
+    <com.github.guilhe.circularprogressview.CircularProgressView
+        android:id="@+id/arrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundAlphaEnabled="true"
+        app:backgroundColor="#0043a6f5"
+        app:progress="3"
+        app:progressBarColor="@color/colorAccent"
+        app:progressBarThickness="117dp"
+        app:progressThumb="false"
+        app:reverse="true"
+        app:shadow="false"
+        app:startingAngle="240" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeDisplayTV"
+        android:text="00:00:00"
+        android:textSize="35sp"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+</FrameLayout>

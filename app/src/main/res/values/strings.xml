@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Gym Chess App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="modelist">
+        <item>Time/Repeats</item>
+        <item>Repeats/Time</item>
+        <item>Better than yesterday</item>
+        <item>Search an opponent</item>
+    </string-array>
+
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
+    <string name="item4">Item4</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    style="@style/Theme.AppCompat.Light.NoActionBar"
+    android:background="@drawable/fon"
+    android:backgroundTint="@color/tintColorBlack"
+    android:backgroundTintMode="src_atop">
+
+
+
+
+    <com.mxn.soul.flowingdrawer_core.FlowingDrawer xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:edMenuBackground="@color/colorPrimaryDark"
+        app:edMenuSize="260dp"
+        app:edPosition="1">
+
+
+        <!--content-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPlayerPager"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <!--menu-->
+        <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+            android:id="@+id/menulayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/id_container_game_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+    </com.mxn.soul.flowingdrawer_core.FlowingDrawer>
+
+
+</LinearLayout>
